@@ -16,16 +16,16 @@ export default function Register({navigation}) {
           {/* Login Form */}
           <Text style={styles.text}>Create Account</Text>
           <View style={styles.fieldInput}>
-            <Input style={styles.input} mx="3"  outlineColor={{color:'red'}} w="100%" size="xl" variant={'filled'} placeholder="Your name" />
+            <Input style={styles.input} mx="3"  outlineColor={{color:'red'}} w="100%" size="xl" variant={'unstyled'} placeholder="Your name" />
           </View>
           <View style={styles.fieldInput}>
-            <Input style={styles.input} mx="3"  outlineColor={{color:'red'}} w="100%" size="xl" variant={'filled'} placeholder="Your email" />
+            <Input style={styles.input} mx="3"  outlineColor={{color:'red'}} w="100%" size="xl" variant={'unstyled'} placeholder="Your email" />
           </View>
           <View style={styles.fieldInput}>
-            <Input style={styles.input} secureTextEntry={true}  type={'password'} mx="3"  w="100%" size="xl" variant={'filled'} placeholder="Password" />
+            <Input style={styles.input} secureTextEntry={true}  type={'password'} mx="3"  w="100%" size="xl" variant={'unstyled'} placeholder="Password" />
           </View>
           <View style={styles.fieldInput}>
-            <Input style={styles.input} secureTextEntry={true}  type={'password'} mx="3"  w="100%" size="xl" variant={'filled'} placeholder="Re-Password" />
+            <Input style={styles.input} secureTextEntry={true}  type={'password'} mx="3"  w="100%" size="xl" variant={'unstyled'} placeholder="Re-Password" />
           </View>
           <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('Register')}>
             <Text style={styles.btnText}>Create Account</Text>
@@ -88,7 +88,8 @@ const styles = StyleSheet.create({
     fontSize:16,
     borderWidth:0,
     paddingHorizontal:6,
-    outlineStyle:'none'
+    // outlineStyle:'none',
+    backgroundColor:'#eef',
   },
   fieldInput:{
     marginVertical:10,

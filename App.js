@@ -1,11 +1,14 @@
 import React from 'react';
 import Approot from './Approot';
-import { NativeBaseProvider, Text, Box,Input} from "native-base";
+import { NativeBaseProvider} from "native-base";
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function App() {
   return (
       <NativeBaseProvider>
-        <Approot />
+        <SafeAreaProvider>
+          <Approot />
+        </SafeAreaProvider>
       </NativeBaseProvider>
 
   );

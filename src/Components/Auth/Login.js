@@ -18,10 +18,10 @@ export default function Login({navigation}) {
           {/* Login Form */}
           <Text style={styles.text}>Sign In</Text>
           <View style={styles.fieldInput}>
-            <Input style={styles.input} mx="3"  outlineColor={{color:'red'}} w="100%" size="xl" variant={'filled'} placeholder="Your email" />
+            <Input style={styles.input} mx="3"  outlineColor={{color:'red'}} w="100%" size="xl" variant={'unstyled'} placeholder="Your email" />
           </View>
           <View style={styles.fieldInput}>
-            <Input style={styles.input} secureTextEntry={true}  type={'password'} mx="3"  w="100%" size="xl" variant={'filled'} placeholder="Your password" />
+            <Input style={styles.input} secureTextEntry={true}  type={'password'} mx="3"  w="100%" size="xl" variant={'unstyled'} placeholder="Your password" />
           </View>
           <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('Register')}>
             <Text style={styles.btnText}>Sign In</Text>
@@ -88,7 +88,8 @@ const styles = StyleSheet.create({
     fontSize:16,
     borderWidth:0,
     paddingHorizontal:6,
-    outlineStyle:'none'
+    // outlineStyle:'none',
+    backgroundColor:'#eef',
   },
   fieldInput:{
     marginVertical:10,
