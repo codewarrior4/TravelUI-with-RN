@@ -53,7 +53,7 @@ export default function Onboarding({navigation}) {
 
    const _renderDoneButton = () =>{
       return (
-        <View style={styles.buttonCircle}>
+        <View onPress={()=>navigation.navigate('Login')} style={styles.buttonCircle}>
           <Text onPress={()=>navigation.navigate('Login')} style={styles.buttonText}>Done</Text>
         </View>
       );
@@ -61,7 +61,7 @@ export default function Onboarding({navigation}) {
 
    const _renderSkipButton = () =>{
     return (
-      <View style={styles.buttonCircle}>
+      <View onPress={()=>navigation.navigate('Login')} style={styles.buttonCircle}>
         <Text onPress={()=>navigation.navigate('Login')} style={styles.buttonText}>Skip</Text>
       </View>
     );
@@ -87,7 +87,6 @@ export default function Onboarding({navigation}) {
               renderSkipButton={_renderSkipButton}
               renderDoneButton={_renderDoneButton}
               showSkipButton={true}
-              // onSkip={onSkip}
             />
   }
     
@@ -129,7 +128,7 @@ const styles = StyleSheet.create({
         textAlign:'center'
     },
     buttonCircle: {
-      width: 70,
+      width: 90,
       height: 40,
       backgroundColor: '#0094FF',
       borderRadius: 20,

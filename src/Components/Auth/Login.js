@@ -1,7 +1,6 @@
-import { StatusBar } from 'native-base';
 import React from 'react';
 import { View, Text, ScrollView, Image, StyleSheet, TouchableOpacity } from 'react-native';
-import { Input,} from "native-base";
+import { Input,StatusBar} from "native-base";
 
 
 export default function Login({navigation}) {
@@ -23,7 +22,7 @@ export default function Login({navigation}) {
           <View style={styles.fieldInput}>
             <Input style={styles.input} secureTextEntry={true}  type={'password'} mx="3"  w="100%" size="xl" variant={'unstyled'} placeholder="Your password" />
           </View>
-          <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('Register')}>
+          <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('Tabs')}>
             <Text style={styles.btnText}>Sign In</Text>
           </TouchableOpacity>
           

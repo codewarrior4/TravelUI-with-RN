@@ -9,6 +9,7 @@ import Reset from './src/Components/Auth/Reset'
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Tabs from './src/Utils/Tabs';
 
 const Approot = () => {
 
@@ -36,13 +37,13 @@ const Approot = () => {
              
              {/* use provider to check if user has installed app before  if not show onboard*/}
 
-               <Stack.Screen name='Onboarding' component={Onboarding} />
-               <Stack.Screen name='Register' component={Register}/>
-               <Stack.Screen name='Login' component={Login}/>
-               <Stack.Screen name='Reset' component={Reset}/>
-               <Stack.Screen name='Otp' component={Otp}/>
-               <Stack.Screen name='Newpassword' component={Newpassword}/>
-             
+              <Stack.Screen name='Onboarding' component={Onboarding} />
+              <Stack.Screen name='Register' component={Register}/>
+              <Stack.Screen name='Login' component={Login}/>
+              <Stack.Screen name='Reset' component={Reset}/>
+              <Stack.Screen name='Otp' component={Otp}/>
+              <Stack.Screen name='Newpassword' component={Newpassword}/>
+              <Stack.Screen name='Tabs' component={Tabs} />
              
              </Stack.Group>
          </Stack.Navigator>

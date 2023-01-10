@@ -1,8 +1,7 @@
-import { StatusBar } from 'native-base';
+import { StatusBar,Input } from 'native-base';
 import React from 'react';
 import { View, Text,  StyleSheet, TouchableOpacity } from 'react-native';
-import { Input} from "native-base";
-import { Icon } from '@rneui/themed';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
 export default function Reset({navigation}) {
@@ -12,7 +11,7 @@ export default function Reset({navigation}) {
       
       <View style={styles.header}>
           <Text onPress={()=>{navigation.goBack()}}>
-            <Icon name='arrow-back' type='Ionicons' color={'black'} />
+            <Ionicons name="arrow-back"  color={'black'} size={24} /> 
           </Text>
 
       </View>

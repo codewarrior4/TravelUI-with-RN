@@ -1,7 +1,6 @@
-import { StatusBar } from 'native-base';
 import React from 'react';
 import { View, Text, ScrollView, Image, StyleSheet, TouchableOpacity } from 'react-native';
-import { Input,} from "native-base";
+import { Input,StatusBar} from "native-base";
 
 export default function Register({navigation}) {
   return (
